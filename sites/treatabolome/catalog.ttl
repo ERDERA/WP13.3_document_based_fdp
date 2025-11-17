@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
 
-<https://w3id.org/duchenne-fdp/catalog/198a1aa7-433a-4092-aadd-0c3c9529dac3> a dcat:Resource,
+<https://erdera.github.io/WP13.3_document_based_fdp/sites/treatabolome/catalog.ttl> a dcat:Resource,
     dcat:Catalog;
   <http://www.w3.org/2000/01/rdf-schema#label> "Treatabolome Catalog";
   dcterms:title "Treatabolome Catalog";
@@ -17,6 +17,8 @@
       foaf:name "ERDERA via Proxy";
     ];
   dcterms:keyword "Rare disease";
+  dcterms:accessRights <https://erdera.github.io/WP13.3_document_based_fdp/sites/treatabolome/catalog.ttl#accessRights>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://erdera.github.io/WP13.3_document_based_fdp/sites/treatabolome/catalog.ttl#identifier> ;
   dcat:contactPoint [ a <http://www.w3.org/2006/vcard/ns#Agent>;
       <http://www.w3.org/2006/vcard/ns#url> <https://treatabolome.org>
     ];
@@ -29,11 +31,11 @@
   dcat:landingPage <https://treatabolome.org>;
   dcat:keyword "rare disease", "treatment", "genetic variants" .
 
-<#identifier>
+<https://erdera.github.io/WP13.3_document_based_fdp/sites/treatabolome/catalog.ttl#identifier>
   a <http://purl.org/spar/datacite/Identifier>;
-  dcterms:identifier "XXXX" .
+  dcterms:identifier "https://erdera.github.io/WP13.3_document_based_fdp/sites/treatabolome/catalog.ttl" .
 
-<#accessRights>
+<https://erdera.github.io/WP13.3_document_based_fdp/sites/treatabolome/catalog.ttl#accessRights>
   a dcterms:RightsStatement;
   dcterms:description "This resource has no access restriction" .
 
