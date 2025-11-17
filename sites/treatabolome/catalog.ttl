@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://w3id.org/duchenne-fdp/catalog/198a1aa7-433a-4092-aadd-0c3c9529dac3> a dcat:Resource,
+    dcat:Catalog;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Treatabolome Catalog";
+  dcterms:title "Treatabolome Catalog";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2025-11-17T13:50:59.971820484Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2025-11-17T13:16:45.917969785Z"^^xsd:dateTime;
+  dcterms:license <https://w3id.org/ejp-rd/resources/licenses/v1.0.txt>;
+  dcterms:description "Treatabolome Catalog";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "ERDERA via Proxy";
+    ];
+  dcterms:keyword "Rare disease";
+  dcat:contactPoint [ a <http://www.w3.org/2006/vcard/ns#Agent>;
+      <http://www.w3.org/2006/vcard/ns#url> <https://treatabolome.org>
+    ];
+  dcat:theme <http://id.nlm.nih.gov/mesh/D035583>, <http://purl.obolibrary.org/obo/OMIT_0022617>, <http://edamontology.org/topic_3325>, <https://w3id.org/biolink/vocab/VariantToDiseaseAssociation>, <https://w3id.org/biolink/vocab/Treatment>, <http://www.ebi.ac.uk/efo/EFO_0000727>, <http://purl.obolibrary.org/obo/NCIT_C164335>;
+  dcat:version "0.1";
+  <https://w3id.org/ejp-rd/vocabulary#personalData> "true";
+  <https://w3id.org/ejp-rd/vocabulary#vpConnection> <https://w3id.org/ejp-rd/vocabulary#VPDiscoverable>;
+  dcterms:issued "2025-11-17T13:50:59.971820484Z"^^xsd:dateTime;
+  dcterms:modified "2025-11-17T13:33:56.48729434Z"^^xsd:dateTime;
+  dcat:landingPage <https://treatabolome.org>;
+  dcat:keyword "rare disease", "treatment", "genetic variants" .
+
+<#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "XXXX" .
+
+<#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
