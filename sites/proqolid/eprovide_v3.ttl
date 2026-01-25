@@ -6,11 +6,17 @@
 @prefix ejp: <https://w3id.org/ejp-rd/vocabulary#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
 
 <https://fairdata.mapi-trust.org/fdp>
     a fdp:FAIRDataPoint ;
-    a https://w3id.org/fdp/fdp-o#MetadataService ;
-    a http://www.w3.org/ns/dcat#Resource ;
+    a <https://w3id.org/fdp/fdp-o#MetadataService> ;
+    a <http://www.w3.org/ns/dcat#Resource> ;
+
+    a ldp:BasicContainer ; 
+    ldp:contains <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> .
+
     ejp:vpConnection ejp:VPDiscoverable ;
 
     dct:title "ePROVIDE FAIR Data Point" ;
@@ -32,15 +38,16 @@
         vcard:fn "MAPi Research Trust FAIR Data Team" ;
         vcard:hasEmail <mailto:fairdata@mapi-trust.org>
     ] ;
+    fdp:metadataCatalog <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> ;
 
     foaf:logo <https://eprovide.mapi-trust.org/assets/images/mapi-logo.png> ;
     dct:issued "2025-11-04"^^xsd:date ;
     dct:modified "2025-11-04"^^xsd:date ;
-    fdp-o:metadataIssued "2025-11-04"^^xsd:date ;
-    fdp-o:metadataModified "2025-11-04"^^xsd:date .
+    fdp:metadataIssued "2025-11-04"^^xsd:date ;
+    fdp:metadataModified "2025-11-04"^^xsd:date .
 
-<https://w3id.org/duchenne-fdp/catalog/> a ldp:DirectContainer, ldp:DirectContainer;
-  dcterms:title "Catalogs", "Catalogs";
+<https://fairdata.mapi-trust.org/fdp/catalog/> a ldp:DirectContainer ;
+  dct:title "Catalogs" ;
   ldp:hasMemberRelation  <https://w3id.org/fdp/fdp-o#metadataCatalog>;
   ldp:membershipResource <https://fairdata.mapi-trust.org/fdp>;
   ldp:contains <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> .
@@ -53,6 +60,5 @@
     ejp:vpConnection ejp:VPDiscoverable ;
     dct:description "Catalog of PROQOLID instruments available via ePROVIDE FAIR Data Point." ;
     dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
-    fdp-o:metadataIssued "2025-11-04"^^xsd:date ;
-    fdp-o:metadataModified "2025-11-04"^^xsd:date .
-
+    fdp:metadataIssued "2025-11-04"^^xsd:date ;
+    fdp:metadataModified "2025-11-04"^^xsd:date .
