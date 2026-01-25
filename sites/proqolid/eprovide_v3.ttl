@@ -15,7 +15,7 @@
     a <http://www.w3.org/ns/dcat#Resource> ;
 
     a ldp:BasicContainer ; 
-    ldp:contains <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> .
+    ldp:contains <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> ;
 
     ejp:vpConnection ejp:VPDiscoverable ;
 
