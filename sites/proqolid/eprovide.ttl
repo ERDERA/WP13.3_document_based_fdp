@@ -36,12 +36,23 @@
     foaf:logo <https://eprovide.mapi-trust.org/assets/images/mapi-logo.png> ;
     dct:issued "2025-11-04"^^xsd:date ;
     dct:modified "2025-11-04"^^xsd:date ;
+    fdp-o:metadataIssued "2025-11-04"^^xsd:date ;
+    fdp-o:metadataModified "2025-11-04"^^xsd:date .
 
-    dcat:catalog <https://fairdata.mapi-trust.org/catalog/proqolid> .
+<https://w3id.org/duchenne-fdp/catalog/> a ldp:DirectContainer, ldp:DirectContainer;
+  dcterms:title "Catalogs", "Catalogs";
+  ldp:hasMemberRelation  <https://w3id.org/fdp/fdp-o#metadataCatalog>;
+  ldp:membershipResource <https://fairdata.mapi-trust.org/fdp>;
+  ldp:contains <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> .
 
-<https://fairdata.mapi-trust.org/catalog/proqolid>
-    a dcat:Catalog ;
+
+
+<https://eprovide.mapi-trust.org/advanced-search?database=proqolid>
+    a dcat:Catalog, dcat:Resource ;
     dct:title "Catalog of Clinical Outcome Assessments" ;
+    ejp:vpConnection ejp:VPDiscoverable ;
     dct:description "Catalog of PROQOLID instruments available via ePROVIDE FAIR Data Point." ;
     dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
-    fdp:metadataParent <https://fairdata.mapi-trust.org/fdp> .
+    fdp-o:metadataIssued "2025-11-04"^^xsd:date ;
+    fdp-o:metadataModified "2025-11-04"^^xsd:date .
+
