@@ -35,8 +35,7 @@
 
     dcat:contactPoint [
         a vcard:Organization ;
-        vcard:fn "MAPi Research Trust FAIR Data Team" ;
-        vcard:hasEmail <mailto:fairdata@mapi-trust.org>
+        vcard:fn "MAPi Research Trust FAIR Data Team" 
     ] ;
     fdp:metadataCatalog <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> ;
 
