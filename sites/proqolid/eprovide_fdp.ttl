@@ -14,10 +14,6 @@
     a <https://w3id.org/fdp/fdp-o#MetadataService> ;
     a <http://www.w3.org/ns/dcat#Resource> ;
 
-    a ldp:BasicContainer ; 
-    ldp:contains <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl> ;
-    fdp:metadataCatalog <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl> ;
-
     ejp:vpConnection ejp:VPDiscoverable ;
 
     dct:title "ePROVIDE FAIR Data Point" ;
@@ -43,7 +39,18 @@
     dct:issued "2025-11-04"^^xsd:date ;
     dct:modified "2025-11-04"^^xsd:date ;
     fdp:metadataIssued "2025-11-04"^^xsd:date ;
-    fdp:metadataModified "2025-11-04"^^xsd:date .
+    fdp:metadataModified "2025-11-04"^^xsd:date ;
+
+
+    a ldp:BasicContainer ; 
+    ldp:contains <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl> ;
+    fdp:metadataCatalog <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl> ;
+    fdp:metadataIdentifier <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_fdp.ttl#identifier> ;
+    dct:conformsTo <https://w3id.org/duchenne-fdp/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c> ;
+    dcat:endPointURL <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_fdp.ttl> .
+
+<https://w3id.org/duchenne-fdp#identifier> a <http://purl.org/spar/datacite/Identifier>;
+  dct:identifier "https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_fdp.ttl" .
 
 <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/catalog/> a ldp:DirectContainer ;
   dct:title "Catalogs" ;
