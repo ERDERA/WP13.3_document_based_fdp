@@ -9,13 +9,14 @@
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
 
 
-<https://fairdata.mapi-trust.org/fdp>
+<https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_fdp.ttl>
     a fdp:FAIRDataPoint ;
     a <https://w3id.org/fdp/fdp-o#MetadataService> ;
     a <http://www.w3.org/ns/dcat#Resource> ;
 
     a ldp:BasicContainer ; 
-    ldp:contains <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> ;
+    ldp:contains <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl> ;
+    fdp:metadataCatalog <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl> ;
 
     ejp:vpConnection ejp:VPDiscoverable ;
 
@@ -31,13 +32,12 @@
 
     dcat:theme <https://w3id.org/ejp-rd/vocabulary#FAIRData> ;
     dcat:keyword "FAIR", "COA", "ePROVIDE", "Metadata" ;
-    dcat:landingPage <https://fairdata.mapi-trust.org> ;
+    dcat:landingPage <https://eprovide.mapi-trust.org/about/about-mapi-research-trust> ;
 
     dcat:contactPoint [
         a vcard:Organization ;
         vcard:fn "MAPi Research Trust FAIR Data Team" 
     ] ;
-    fdp:metadataCatalog <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> ;
 
     foaf:logo <https://eprovide.mapi-trust.org/assets/images/mapi-logo.png> ;
     dct:issued "2025-11-04"^^xsd:date ;
@@ -45,19 +45,11 @@
     fdp:metadataIssued "2025-11-04"^^xsd:date ;
     fdp:metadataModified "2025-11-04"^^xsd:date .
 
-<https://fairdata.mapi-trust.org/fdp/catalog/> a ldp:DirectContainer ;
+<https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/catalog/> a ldp:DirectContainer ;
   dct:title "Catalogs" ;
   ldp:hasMemberRelation  <https://w3id.org/fdp/fdp-o#metadataCatalog>;
-  ldp:membershipResource <https://fairdata.mapi-trust.org/fdp>;
-  ldp:contains <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> .
+  ldp:membershipResource <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_fdp.ttl>;
+  ldp:contains <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl> .
+# 
 
 
-
-<https://eprovide.mapi-trust.org/advanced-search?database=proqolid>
-    a dcat:Catalog, dcat:Resource ;
-    dct:title "Catalog of Clinical Outcome Assessments" ;
-    ejp:vpConnection ejp:VPDiscoverable ;
-    dct:description "Catalog of PROQOLID instruments available via ePROVIDE FAIR Data Point." ;
-    dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
-    fdp:metadataIssued "2025-11-04"^^xsd:date ;
-    fdp:metadataModified "2025-11-04"^^xsd:date .
