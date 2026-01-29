@@ -35,7 +35,7 @@
         vcard:fn "MAPi Research Trust FAIR Data Team" 
     ] ;
     
-    dcat:accessURL <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> .
+    dcat:accessURL <https://eprovide.mapi-trust.org/advanced-search?database=proqolid> ;
     fdp:metadataIdentifier <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_distribution.ttl#identifier> .
 <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_disribution.ttl#identifier> a <http://purl.org/spar/datacite/Identifier>;
   dct:identifier "https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_distribution.ttl" .
