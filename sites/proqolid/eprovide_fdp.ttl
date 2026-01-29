@@ -32,7 +32,10 @@
 
     dcat:contactPoint [
         a vcard:Organization ;
-        vcard:fn "MAPi Research Trust FAIR Data Team" 
+        vcard:fn "MAPi Research Trust FAIR Data Team" ;
+        vcard:hasURL <https://eprovide.mapi-trust.org/page/contact> ;
+        vcard:url <https://eprovide.mapi-trust.org/page/contact>
+        #vcard:url included for backward compatibility
     ] ;
 
     foaf:logo <https://eprovide.mapi-trust.org/assets/images/mapi-logo.png> ;
