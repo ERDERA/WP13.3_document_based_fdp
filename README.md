@@ -4,4 +4,4 @@ For use with the FDP Proxy designed by Mark D Wilkinson (This is distinct from t
 
 FDPs are served from: (sorry, github pages does not allow automated indexing...)
 
-https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_v3.ttl
+https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_fdp.ttl
