@@ -36,7 +36,14 @@
         vcard:fn "MAPi Research Trust FAIR Data Team" 
     ] ;
 
-    dcat:dataset <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_dataset.ttl> .
+
+
+    a ldp:BasicContainer ; 
+    ldp:contains <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_dataset.ttl> ;
+    dcat:dataset <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_dataset.ttl> ;
+    fdp:metadataIdentifier <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl#identifier> .
+<https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl#identifier> a <http://purl.org/spar/datacite/Identifier>;
+  dct:identifier "https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/eprovide_catalog.ttl" .
 
 <https://erdera.github.io/WP13.3_document_based_fdp/sites/proqolid/catalog/datasets/> a ldp:DirectContainer ;
   dct:title "Datasets" ;
