@@ -19,6 +19,9 @@
     fdp:metadataModified "2025-11-04"^^xsd:date ;
     dct:issued "2025-11-04"^^xsd:date ;
     dct:modified "2025-11-04"^^xsd:date ;
+
+    dct:issued "2025-11-04"^^xsd:date ;
+    dct:modified "2025-11-04"^^xsd:date ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
 
     dcat:theme <https://w3id.org/ejp-rd/vocabulary#FAIRData> ;
