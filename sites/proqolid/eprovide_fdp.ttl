@@ -24,6 +24,7 @@
         a foaf:Organization ;
         foaf:name "MAPi Research Trust" ;
         foaf:homepage <https://eprovide.mapi-trust.org/about/about-mapi-research-trust>
+        foaf:logo <https://eprovide.mapi-trust.org/assets/images/mapi-logo.png> ;
     ] ;
 
     dcat:theme <https://w3id.org/ejp-rd/vocabulary#FAIRData> ;
