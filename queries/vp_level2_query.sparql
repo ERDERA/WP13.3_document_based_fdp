@@ -6,7 +6,7 @@ PREFIX fdp: <https://w3id.org/fdp/fdp-o#>
 PREFIX ldp: <http://www.w3.org/ns/ldp#>
  
  
-SELECT DISTINCT ?resource ?fdp ?resourceName ?resource ?dataset ?serviceHomePage ?serviceURL ?openAPI ?operationType ?resourceDescription ?resourceLogo ?resourceCreated ?resourceUpdated
+SELECT DISTINCT ?resource ?fdp ?resourceName ?resource ?dataset ?serviceHomePage ?serviceURL ?openAPI ?operationType ?resourceDescription ?resourceLogo ?publisherLogo ?resourceCreated ?resourceUpdated
  
 WHERE { 
   
@@ -24,7 +24,8 @@ WHERE {
     OPTIONAL { ?resource dcat:endpointDescription ?openAPI }
     OPTIONAL { ?resource dcat:servesDataset ?dataset }
     OPTIONAL { ?resource dcterms:description ?resourceDescription }
-    OPTIONAL { ?resource dcterms:publisher [ foaf:logo ?resourceLogo ] }
+    OPTIONAL { ?resource foaf:logo ?resourceLogo }
+    OPTIONAL { ?resource dcterms:publisher [ foaf:logo ?publisherLogo ] }
 
     # deal with dates, accepting both/either the fdp-ontology or the dcterms properties
     OPTIONAL { ?resource fdp:metadataIssued  ?fdpIssued . }
