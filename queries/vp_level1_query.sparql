@@ -142,8 +142,9 @@ UNION
       dcat:Resource,
       fdp:MetadataService,
       ldp:Container,
-      ldp:BasicContainer
-    ) )    
+      ldp:BasicContainer,
+	  dcat:DataService 
+    ) )    #  We filter out data services here, only because the VP has a specific call for data services
     # FILTER CONTAINS(LCASE(str(?resourceDescription)), LCASE("proqolid"))
 	}	
 }
