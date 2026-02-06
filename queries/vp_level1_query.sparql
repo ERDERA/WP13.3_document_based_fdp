@@ -20,7 +20,7 @@ WHERE {
       ?resource a fdp:FAIRDataPoint ;
       	dcterms:title ?resourceName .
     
-   	  ?resource	ejprd:vpConnection <https://w3id.org/ejp-rd/vocabulary#VPDiscoverable> .
+   	  ?resource	?connection ?discoverable .
 
 	  	# deal with dates, accepting both/either the fdp-ontology or the dcterms properties
       OPTIONAL { ?resource fdp:metadataIssued  ?fdpIssued . }
@@ -87,7 +87,7 @@ UNION
       FILTER (?other != dcat:Resource)
     }
 
- 	?resource	ejprd:vpConnection <https://w3id.org/ejp-rd/vocabulary#VPDiscoverable> .
+    ?resource	?connection ?discoverable .
     ?resource dcterms:title ?resourceName .
     
   	# deal with dates, accepting both/either the fdp-o or the dcterms properties
