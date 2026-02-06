@@ -18,7 +18,9 @@ WHERE {
       BIND(fdp:FAIRDataPoint AS ?resourceTypeURI)
 
       ?resource a fdp:FAIRDataPoint ;
-      dcterms:title ?resourceName .
+      	dcterms:title ?resourceName .
+    
+   	  ?resource	ejprd:vpConnection <https://w3id.org/ejp-rd/vocabulary#VPDiscoverable> .
 
 	  	# deal with dates, accepting both/either the fdp-ontology or the dcterms properties
       OPTIONAL { ?resource fdp:metadataIssued  ?fdpIssued . }
@@ -85,8 +87,9 @@ UNION
       FILTER (?other != dcat:Resource)
     }
 
+ 	?resource	ejprd:vpConnection <https://w3id.org/ejp-rd/vocabulary#VPDiscoverable> .
     ?resource dcterms:title ?resourceName .
- 
+    
   	# deal with dates, accepting both/either the fdp-o or the dcterms properties
     OPTIONAL { ?resource fdp:metadataIssued  ?fdpIssued . }
     OPTIONAL { ?resource dcterms:issued      ?dctIssued . }
@@ -141,7 +144,6 @@ UNION
       ldp:Container,
       ldp:BasicContainer
     ) )    
-    # to check the status of just one resource
     # FILTER CONTAINS(LCASE(str(?resourceDescription)), LCASE("proqolid"))
 	}	
 }
