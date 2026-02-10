@@ -13,7 +13,7 @@
     ejp:vpConnection ejp:VPDiscoverable ;
     dct:description "PROQOLID instruments available via ePROVIDE." ;
     dcat:landingPage <https://eprovide.mapi-trust.org/about/about-mapi-research-trust> ;
-    foaf:logo <https://eprovide.mapi-trust.org/assets/images/mapi-logo.png> ;
+    foaf:logo <https://eprovide.mapi-trust.org/assets/images/eprovide-logo.png> ;
 
     dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
     fdp:metadataIssued "2025-11-04T00:00:00Z"^^xsd:dateTime ;
@@ -30,7 +30,7 @@
         a foaf:Organization ;
         foaf:name "MAPi Research Trust" ;
         foaf:homepage <https://eprovide.mapi-trust.org/about/about-mapi-research-trust> ;
-        foaf:logo <https://eprovide.mapi-trust.org/assets/images/mapi-logo.png> ;
+        foaf:logo <https://eprovide.mapi-trust.org/assets/images/eprovide-logo.png> ;
     ] ;
 
 
