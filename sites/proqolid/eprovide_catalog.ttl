@@ -16,10 +16,10 @@
     foaf:logo <https://eprovide.mapi-trust.org/assets/images/mapi-logo.png> ;
 
     dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
-    fdp:metadataIssued "2025-11-04"^^xsd:date ;
-    fdp:metadataModified "2025-11-04"^^xsd:date ;
-    dct:issued "2025-11-04"^^xsd:date ;
-    dct:modified "2025-11-04"^^xsd:date ;
+    fdp:metadataIssued "2025-11-04T00:00:00Z"^^xsd:dateTime ;
+    fdp:metadataModified "2025-11-04T00:00:00Z"^^xsd:dateTime ;
+    dct:issued "2025-11-04T00:00:00Z"^^xsd:dateTime ;
+    dct:modified "2025-11-04T00:00:00Z"^^xsd:dateTime ;
 
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
 
