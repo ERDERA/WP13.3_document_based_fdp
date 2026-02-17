@@ -15,7 +15,7 @@ WHERE {
   VALUES ?invisible { ejprd:VPInvisible }
 
   ?resource a dcat:DataService ;
-      ?conmnection ?discoverable ;
+      ?connection ?discoverable ;
       dcterms:title ?resourceName ;
       dcterms:type ?operationType .
 
