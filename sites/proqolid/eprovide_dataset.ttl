@@ -11,7 +11,7 @@
     a dcat:Dataset, dcat:Resource ;
     dct:title "Clinical Outcome Assessments" ;
     ejp:vpConnection ejp:VPDiscoverable ;
-    dct:description "PROQOLID instruments available via ePROVIDE." ;
+    dct:description "PROQOLID™ COAs available via ePROVIDE." ;
     dcat:landingPage <https://eprovide.mapi-trust.org/about/about-mapi-research-trust> ;
     foaf:logo <https://eprovide.mapi-trust.org/assets/images/eprovide-logo.png> ;
 
