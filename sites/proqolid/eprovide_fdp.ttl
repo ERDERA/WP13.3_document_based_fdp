@@ -17,19 +17,19 @@
     ejp:vpConnection ejp:VPDiscoverable ;
 
     dct:title "ePROVIDE FAIR Data Point" ;
-    dct:description "FAIR Data Point exposing metadata about COA instruments in ePROVIDE." ;
+    dct:description "FAIR Data Point exposing metadata about COA in ePROVIDE." ;
     dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:publisher [
         a foaf:Organization ;
         foaf:name "MAPi Research Trust" ;
-        foaf:homepage <https://eprovide.mapi-trust.org/about/about-mapi-research-trust> ;
+        foaf:homepage <https://fairdata.mapi-trust.org/> ;
         foaf:logo <https://eprovide.mapi-trust.org/assets/images/eprovide-logo.png> ;
     ] ;
 
     dcat:theme <https://w3id.org/ejp-rd/vocabulary#FAIRData> ;
     dcat:keyword "FAIR", "COA", "ePROVIDE", "Metadata" ;
-    dcat:landingPage <https://eprovide.mapi-trust.org/about/about-mapi-research-trust> ;
+    dcat:landingPage <https://fairdata.mapi-trust.org/> ;
 
     dcat:contactPoint [
         a vcard:Organization ;
