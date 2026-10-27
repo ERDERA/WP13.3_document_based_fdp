@@ -11,8 +11,8 @@
     a dcat:Catalog, dcat:Resource ;
     dct:title "Catalog of Clinical Outcome Assessments" ;
     ejp:vpConnection ejp:VPDiscoverable ;
-    dct:description "Catalog of PROQOLID instruments available via ePROVIDE." ;
-    dcat:landingPage <https://eprovide.mapi-trust.org/about/about-mapi-research-trust> ;
+    dct:description "Catalog of PROQOLID™ COAs available via ePROVIDE." ;
+    dcat:landingPage <https://eprovide.mapi-trust.org/advanced-search> ;
     foaf:logo <https://eprovide.mapi-trust.org/assets/images/eprovide-logo.png> ;
 
     dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
@@ -30,7 +30,7 @@
     dct:publisher [
         a foaf:Organization ;
         foaf:name "MAPi Research Trust" ;
-        foaf:homepage <https://eprovide.mapi-trust.org/about/about-mapi-research-trust> ;
+        foaf:homepage <https://eprovide.mapi-trust.org/advanced-search> ;
         foaf:logo <https://eprovide.mapi-trust.org/assets/images/eprovide-logo.png> ;
     ] ;
 
