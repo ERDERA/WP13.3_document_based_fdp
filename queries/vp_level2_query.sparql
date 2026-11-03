@@ -6,7 +6,7 @@ PREFIX fdp: <https://w3id.org/fdp/fdp-o#>
 PREFIX ldp: <http://www.w3.org/ns/ldp#>
  
  
-SELECT DISTINCT ?resource ?fdp ?resourceName ?resource ?dataset ?serviceHomePage ?serviceURL ?openAPI ?operationType ?resourceDescription ?resourceLogo ?publisherLogo ?resourceCreated ?resourceUpdated
+SELECT DISTINCT ?resource ?fdp ?resourceName ?dataset ?serviceHomePage ?serviceURL ?openAPI ?operationType ?resourceDescription ?resourceLogo ?publisherLogo ?resourceCreated ?resourceUpdated
  
 WHERE { 
   

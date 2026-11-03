@@ -6,7 +6,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX ldp: <http://www.w3.org/ns/ldp#>
  
-SELECT DISTINCT ?resource ?fdp ?resourceName ?resource ?resourceTypeURI ?ResourceType ?resourceCreated ?resourceUpdated ?resourceHomepage ?resourceDescription ?resourceLogo ?publisherLogo
+SELECT DISTINCT ?resource ?fdp ?resourceName ?resourceTypeURI ?ResourceType ?resourceCreated ?resourceUpdated ?resourceHomePage ?resourceDescription ?resourceLogo ?publisherLogo
  
 WHERE { 
     VALUES ?connection { ejprd:vpConnection }
