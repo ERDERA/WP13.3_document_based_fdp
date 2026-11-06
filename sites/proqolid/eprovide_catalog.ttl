@@ -11,7 +11,7 @@
     a dcat:Catalog, dcat:Resource ;
     dct:title "Catalog of Clinical Outcome Assessments" ;
     ejp:vpConnection ejp:VPDiscoverable ;
-    dct:description "Catalog of PROQOLID™ COAs available via ePROVIDE." ;
+    dct:description "Catalog of Clinical Outcome Assessments: Catalog of COA in PROQOLID™ are available via ePROVIDE" ;
     dcat:landingPage <https://eprovide.mapi-trust.org/advanced-search> ;
     foaf:logo <https://eprovide.mapi-trust.org/assets/images/eprovide-logo.png> ;
 
